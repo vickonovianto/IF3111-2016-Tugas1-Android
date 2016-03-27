@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.5"
+        android:src="@drawable/cameraicon"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginRight="-4dp"
+        android:adjustViewBounds="true"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.5"
+        android:src="@drawable/qaicon"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:background="@drawable/line"
+        android:onClick="gotoQA"/>
+</LinearLayout>
