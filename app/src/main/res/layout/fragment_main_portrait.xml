@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:orientation="horizontal">
 
     <ImageButton
         android:layout_width="0dp"
@@ -17,6 +18,14 @@
         android:adjustViewBounds="true"
         android:background="#ffffff"
         android:onClick="dispatchTakePictureIntent" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_gravity="left"
+        android:layout_marginBottom="62dp" />
 
     <ImageButton
         android:layout_width="0dp"
