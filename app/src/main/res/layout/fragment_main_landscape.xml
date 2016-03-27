@@ -15,7 +15,8 @@
         android:layout_marginRight="-4dp"
         android:layout_marginBottom="-4dp"
         android:src="@drawable/qaicon"
-        android:background="@drawable/lineland" />
+        android:background="@drawable/lineland"
+        android:onClick="gotoQA" />
 
     <ImageButton
         android:layout_width="62dp"
@@ -27,5 +28,6 @@
         android:layout_marginRight="-4dp"
         android:layout_marginTop="-4dp"
         android:src="@drawable/cameraicon"
-        android:background="#ffffff" />
+        android:background="#ffffff"
+        android:onClick="dispatchTakePictureIntent" />
 </LinearLayout>

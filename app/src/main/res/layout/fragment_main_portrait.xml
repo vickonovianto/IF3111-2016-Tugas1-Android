@@ -15,7 +15,8 @@
         android:layout_marginBottom="-4dp"
         android:layout_marginRight="-4dp"
         android:adjustViewBounds="true"
-        android:background="#ffffff" />
+        android:background="#ffffff"
+        android:onClick="dispatchTakePictureIntent" />
 
     <ImageButton
         android:layout_width="0dp"
