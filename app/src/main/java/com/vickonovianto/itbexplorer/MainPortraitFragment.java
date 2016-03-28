@@ -28,6 +28,7 @@ public class MainPortraitFragment extends Fragment implements OnMapReadyCallback
 
     //private OnFragmentInteractionListener mListener;
     private FragmentActivity fa;
+    private GoogleMap map;
 
     public MainPortraitFragment() {
         // Required empty public constructor
@@ -37,9 +38,11 @@ public class MainPortraitFragment extends Fragment implements OnMapReadyCallback
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         fa = new FragmentActivity();
-        SupportMapFragment mapFragment = (SupportMapFragment) fa.getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-        return inflater.inflate(R.layout.fragment_main_portrait, container, false);
+        View view = inflater.inflate(R.layout.fragment_main_portrait, container, false);
+        //SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+        //mapFragment.getMapAsync(this);
+        //map = mapFragment.getMap();
+        return view;
     }
 
     @Override
